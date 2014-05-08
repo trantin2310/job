@@ -16,6 +16,10 @@ class JobsController extends AppController {
 		//$this->Jobs->recursive = 0;
 		$this->set('jobs', $this->paginate());
 	}
+    public function index_tin() {
+		//$this->Jobs->recursive = 0;
+		$this->set('jobs', $this->paginate());
+	}
     
     public function add() {
 		if ($this->request->is('post')) {
