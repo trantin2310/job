@@ -19,6 +19,7 @@ class JobsController extends AppController {
     public function index_tin() {
 		//$this->Jobs->recursive = 0;
 		$this->set('jobs', $this->paginate());
+		//$this->Jobs->recursive = 0; for test brand
 	}
     
     public function add() {
